@@ -58,6 +58,8 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\KeyboardMovement.cs" />
     <Compile Include="Assets\Scripts\Transformation.cs" />
+    <Compile Include="Assets\Scripts\WheelRotate.cs" />
+    <Compile Include="Assets\Scripts\LockControl.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
