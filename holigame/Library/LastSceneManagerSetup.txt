@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/CodeLock.unity
+- path: "Assets/Scenes/In\xEAs.unity"
   isLoaded: 1
   isActive: 1
   isSubScene: 0

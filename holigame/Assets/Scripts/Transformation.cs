@@ -8,19 +8,22 @@ public class Transformation : MonoBehaviour
     [SerializeField] public GameObject[] potions;
 
     [SerializeField] private int currentActiveAnimal;
+    [SerializeField] private Vector3 currentActiveAnimalPosition;
     [SerializeField] protected int newPotion;
 
     private void OnTriggerEnter(Collider other)
     {
          for (int i = 0; i < potions.Length; i++)
-        {
+         {
             if (other.gameObject == potions[i])
             {
+                currentActiveAnimalPosition = animals[currentActiveAnimal].transform.position;
+
                 currentActiveAnimal = i;
                 ChangeAnimal(animals[currentActiveAnimal]);
                 break;
             }
-        }
+         }
         /*if (potions[newPotion])
         {
             currentActiveAnimal = newPotion;
@@ -35,6 +38,7 @@ public class Transformation : MonoBehaviour
             obj.SetActive(false);
         }
 
+        newAnimal.transform.position = currentActiveAnimalPosition;
         newAnimal.SetActive(true);
     }
 }
